@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Promoção Farmácia</title>
+    <script>
+        function calcularValor() {
+            const preco = parseFloat(document.getElementById("preco").value);
+            const valorPromo = (preco * 2) - ((preco * 2) % 1);
+            document.getElementById("resultado").innerText = `Preço na promoção: R$ ${valorPromo.toFixed(2)}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Promoção de Medicamentos</h1>
+    <input type="text" id="descricao" placeholder="Descrição"><br>
+    <input type="number" id="preco" placeholder="Preço" step="0.01"><br>
+    <button onclick="calcularValor()">Calcular</button>
+    <div id="resultado"></div>
+</

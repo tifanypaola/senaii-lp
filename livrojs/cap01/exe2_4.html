@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante - Cálculo de Consumo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Restaurante</h1>
+
+<form>
+    <label for="precoKg">Preço por kg (R$):</label>
+    <input type="number" id="precoKg" step="0.01" required><br>
+
+    <label for="consumo">Consumo (gramas):</label>
+    <input type="number" id="consumo" required><br>
+
+    <button type="button" onclick="calcularValor()">Calcular Valor a Pagar</button>
+</form>
+
+<h2>Valor a Pagar</h2>
+<div id="resultado"></div>
+
+</body>
+</html>

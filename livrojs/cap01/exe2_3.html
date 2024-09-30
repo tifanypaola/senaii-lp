@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenda de Veículos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Revenda de Veículos</h1>
+
+<form>
+    <label for="modelo">Modelo do veículo:</label>
+    <input type="text" id="modelo" required><br>
+
+    <label for="preco">Preço do veículo (R$):</label>
+    <input type="number" id="preco" step="0.01" required><br>
+
+    <button type="button">Calcular</button>
+</form>
+
+<h2>Resultados</h2>
+<div id="resultados">
+    <p><strong>Modelo do veículo:</strong> </p>
+    <p><strong>Preço total:</strong> </p>
+    <p><strong>Entrada (50%):</strong> </p>
+    <p><strong>Saldo a financiar:</strong> </p>
+    <p><strong>Valor da parcela em 12x:</strong> </p>
+</div>
+
+</body>
+</html>
+
